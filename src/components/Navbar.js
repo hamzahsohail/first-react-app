@@ -3,13 +3,16 @@ import PropTypes from "prop-types";
 
 export default function Navbar(props) {
   return (
-    <nav className="navbar navbar-dark navbar-expand-lg bg-dark">
-      <div className="m-auto">
-        <a className="navbar-brand" href="/">
-          {props.title}
-        </a>
-      </div>
-    </nav>
+    <>
+      <nav className="navbar navbar-dark navbar-expand-lg bg-dark">
+        <div className="navbar-brand justify-content-start">
+          <a className="navbar-brand" href="./">
+            {props.title}
+          </a>
+        </div>
+        <button className="btn btn-secondary">Toggle Dark Mode</button>
+      </nav>
+    </>
   );
 }
 

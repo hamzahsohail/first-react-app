@@ -41,3 +41,23 @@
   display: flex;
   justify-content: space-between;
 }
+
+.text-justify {
+  text-align: justify;
+}
+
+.accordion-button::after {
+  width: 0;
+}
+
+.navbar-brand {
+  margin-left: var(--bs-navbar-brand-margin-end);
+}
+
+.btn {
+  margin-right: var(--bs-navbar-brand-margin-end);
+}
+
+.accordion {
+  padding-bottom: 1rem;
+}
