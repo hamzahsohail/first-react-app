@@ -10,7 +10,7 @@ export default function Navbar(props) {
             {props.title}
           </a>
         </div>
-        <button className="btn btn-secondary">Toggle Dark Mode</button>
+        <button className="btn btn-secondary" onClick={props.toggleDarkMode}>Toggle Dark Mode</button>
       </nav>
     </>
   );
