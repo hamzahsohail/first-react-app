@@ -61,3 +61,12 @@
 .accordion {
   padding-bottom: 1rem;
 }
+
+.alert {
+  --bs-alert-border-radius: 0;
+}
+
+.bi {
+  width: 1em;
+  height: 1em;
+}
