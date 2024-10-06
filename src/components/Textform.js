@@ -16,7 +16,7 @@ export default function Textform(props) {
     setIsUppercase(true); // Set state to uppercase
     setText(UC);
     setBtnText("Convert to lowercase");
-    props.showAlert("converted to UPPERCASE")
+    props.showAlert("converted to UPPERCASE");
   };
 
   const handleLcClick = () => {
@@ -24,7 +24,7 @@ export default function Textform(props) {
     setIsUppercase(false); // Set state to lowercase
     setText(LC);
     setBtnText("Convert to UPPERCASE");
-    props.showAlert("converted to lowercase")
+    props.showAlert("converted to lowercase");
   };
 
   const handleBtnClick = () => {
@@ -38,13 +38,17 @@ export default function Textform(props) {
   };
 
   const handleCopy = () => {
-    navigator.clipboard.writeText(text)
-    props.showAlert("copied")
+    if (text !== "") {
+      navigator.clipboard.writeText(text);
+      props.showAlert("copied");
+    }
   };
 
   const handleReset = () => {
-    setText("");
-    props.showAlert("reset")
+    if (text !== "") {
+      setText("");
+      props.showAlert("reset");
+    }
   };
 
   return (
